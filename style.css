@@ -1,0 +1,187 @@
+:root{
+    /* colors */
+
+    --white: hsl(0,0% 100%);
+
+    --stone-100: hsl(30, 18%, 87%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(32, 10%, 34%);
+    --stone-900: hsl(15, 4%, 18%);
+
+    --brown-800: hsl(14, 45%, 36%);
+
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+
+
+    /* Fonts */
+
+    --ff-primary: "Outfit", sans-serif;
+    --ff-heading: "Young Serif", serif;
+
+    --fw-400: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+
+    --fs-primary: 16px;
+    --fs-heading: 32px;
+    --fs-sub-heading: 24px;
+}
+
+/*RESET*/
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/*STYLING*/
+
+
+body{
+    font-family: var(--ff-primary);
+    font-size: var(--fs-primary);    
+    color: var(--stone-600);
+    background-color: var(--white);
+    line-height: 1.5;
+    position: relative;
+}
+
+h1,
+h2{
+    font-family: var(--ff-heading);
+}
+
+h1{
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-bold);
+    line-height: 1;
+    color: var(--stone-900);
+
+}
+
+h2{
+    color: var(--brown-800);
+    font-size: var(--fs-sub-heading);
+}
+
+h3{
+    font-size: var(--fs-sub-heading);
+    color: var(--rose-800);
+    font-weight: var(--fw-semi-bold);
+}
+
+li::before{
+    content: "";    
+    padding-left: .625rem;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    margin: auto;    
+    max-width: 67.5rem;
+}
+
+.content-p-img{
+    display: flex;
+    flex-direction: column;    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;    
+    max-width: 67.5rem;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+#header-img{
+    margin-bottom: 32px;
+}
+
+.prep-box{
+    background-color: var(--rose-50);
+    width: 100%;
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+}
+
+.semi-bold-p{
+    font-weight: var(--fw-semi-bold);
+}
+
+.flex-list{    
+    display: flex;
+    flex-direction: column;    
+    gap: .5rem;
+}
+
+.info-box-flex{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding-bottom: 2rem;
+    border-bottom: .125rem solid hsla(32, 10%, 34%, 0.35);
+}
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: .6875rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
